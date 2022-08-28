@@ -68,12 +68,12 @@ class Nature:
     def start_conversation_log(self):
         today = str(date.today())
         today = today
-        with open('E:\VS Code\Python\AI Workshop\Conversation Log.txt', "a") as f:
+        with open('E:\VS Code\Python\AI_Workshop\Conversation Log.txt', "a") as f:
             f.write("Conversation started on: " + today + " at "+ datetime.now().strftime("%H : %M : %S") + "\n")
         
     # Writes each command from the user to the conversation log
     def remember(self, command):
-        with open('E:\VS Code\Python\AI Workshop\Conversation Log.txt', "a") as f:
+        with open('E:\VS Code\Python\AI_Workshop\Conversation Log.txt', "a") as f:
             f.write("User: " + command + "\n")
 
     def find_search_words(self, command):
